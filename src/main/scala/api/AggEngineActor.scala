@@ -66,7 +66,6 @@ class AggEngineActor() extends Actor with ActorLogging {
       allPageDataCounter match {
         case x if (x == 1) => {
           listEntertainmentByPageNo = listEntertainmentByPageNo ::: List(ListEntertainmentByPageNo(eList, typeId))
-          val totalEntertainment = listEntertainmentByPageNo.map(x => x.eList.list.length).fold(0)(_ + _)
           listEntertainmentByPageNo.map(x => {
             x match {
               case x if (x.typeId == 1) => {
