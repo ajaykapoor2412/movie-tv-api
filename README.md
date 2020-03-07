@@ -12,6 +12,6 @@ Prerequisite
 Steps to run
 ============================
 1. git clone https://github.com/ajaykapoor2412/movie-tv-api.git
-2. cd movie-db-api
+2. cd movie-tv-api
 3. sbt compile
 4. sbt run
